@@ -1,0 +1,255 @@
+body {
+    font-size: 1em;
+    height: 100vh;
+    /* background-image: url("../images/img.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1500px; */
+
+}
+.container-global{
+    width: 52%;
+    margin: auto;
+    height: 100%;
+
+}
+
+h1 {
+    font-size: 30;
+    text-align: center;
+    color: rgb(142, 143, 143);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cart {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #d4cecef8;
+    width: 100%;
+    height: 15%;
+    border-radius: 10px;
+    margin: 0 auto 5%;
+    padding: 10 auto;
+}
+
+/*
+padding = espaçamento interno
+margin = espaçamento externo
+ */
+
+#green {
+    margin: auto;
+    background-color: #e1e1e1;
+    width: 96%;
+    height: 80%;
+    border-radius: 10px;
+
+}
+
+#green div {
+    color: rgb(30, 133, 17);
+    text-align: center;
+}
+
+#red {
+    margin: auto;
+    background-color: #e1e1e1;
+    display: inline;
+    width: 96%;
+    height: 80%;
+    border-radius: 10px;
+}
+
+#red div {
+    color: rgb(216, 84, 84);
+    text-align: center;
+}
+
+.titulo {
+    font-size: 180%;
+    margin: auto;
+
+}
+
+.sub-titulo {
+    font-size: 120%;
+    margin: 2% auto 0;
+
+}
+
+.historico-container{
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.historico-custo {
+    display: flex;
+    border-radius: 10px;
+    background-color: #e1e1e1;
+    width: 98%;
+    height: 26%;
+    font-size: 32px;
+    color: rgb(216, 84, 84);
+    justify-content: space-between;
+    padding: 1%;
+}
+
+.historico-receita {
+    display: flex;
+    border-radius: 10px;
+    background-color: #e1e1e1;
+    width: 98%;
+    height: 26%;
+    font-size: 32px;
+    color: rgb(62, 202, 49);
+    justify-content: space-between;
+    padding: 1%;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+   
+
+}
+
+
+.historico-custo img {
+    height: 1em;
+
+}
+
+.historico-custo .text {
+    color: rgb(216, 84, 84);
+    display: inline;
+    font-size: 0.5em;
+    
+
+
+}
+
+.historico-receita img {
+    height: 0.6em;
+
+}
+
+.historico-receita .text {
+    color: rgb(62, 202, 49);
+    display: inline;
+    font-size: 0.5em;
+    
+
+
+}
+
+i{
+    color:black;
+    font-size: 0.7em;
+    margin-right: 3px;
+
+}
+
+
+/* // Dispositivos extra small (telefones em modo retrato, com menos de 576px) */
+@media (max-width: 575.98px) {
+    .cart {
+        height: 30%;
+        grid-template-columns: auto;
+    }
+
+    body {
+        font-size: 0.6em;
+        
+    
+    }
+
+    .container-global{
+        width: 100%;
+        margin: auto;
+        height: 100%;
+    
+    }
+
+    .historico-custo {
+        display: flex;
+        border-radius: 10px;
+        background-color: #e1e1e1;
+        width: 98%;
+        height: 26%;
+        font-size: 14px;
+        color: rgb(216, 84, 84);
+        justify-content: space-between;
+        padding: 1%;
+    }
+    
+    .historico-receita {
+        display: flex;
+        border-radius: 10px;
+        background-color: #e1e1e1;
+        width: 98%;
+        height: 26%;
+        font-size: 14px;
+        color: rgb(62, 202, 49);
+        justify-content: space-between;
+        padding: 1%;
+    }
+
+}
+
+/* // Dispositivos small (telefones em modo paisagem, com menos de 768px) */
+@media (max-width: 767.98px) {
+    .cart {
+        height: 30%;
+        grid-template-columns: auto;
+    }
+
+    body {
+        font-size: 0.8em;
+        
+    
+    }
+
+    .container-global{
+        width: 80%;
+        margin: auto;
+        height: 100%;
+    
+    }
+
+    .historico-custo {
+        display: flex;
+        border-radius: 10px;
+        background-color: #e1e1e1;
+        width: 98%;
+        height: 26%;
+        font-size: 24px;
+        color: rgb(216, 84, 84);
+        justify-content: space-between;
+        padding: 1%;
+    }
+    
+    .historico-receita {
+        display: flex;
+        border-radius: 10px;
+        background-color: #e1e1e1;
+        width: 98%;
+        height: 26%;
+        font-size: 24px;
+        color: rgb(62, 202, 49);
+        justify-content: space-between;
+        padding: 1%;
+    }
+}
+
+/* // Dispositivos médios (tablets com menos de 992px) */
+@media (max-width: 991.98px) {}
+
+/* // Dispositivos large (desktops com menos de 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* // Dispositivos extra large (desktops grandes) */
+/* // Nenhuma media query, já que o breakpoint extra large não possui nenhum limite acima. */
